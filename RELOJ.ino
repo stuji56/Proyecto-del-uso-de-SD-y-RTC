@@ -57,25 +57,7 @@ void setup() {
 
   
 }
-/*HABILITAR ESTE VOID PARA GRABAR FECHAS EN UN TXT PARA CONSTRUIR MODELO DE REGRESION
- void printDate(DateTime date)
-{
-   Serial.print(date.year(), DEC);
-   Serial.print('/');
-   Serial.print(date.month(), DEC);
-   Serial.print('/');
-   Serial.print(date.day(), DEC);
-   Serial.print(" (");
-  
-   Serial.print(") ");
-   Serial.print(date.hour(), DEC);
-   Serial.print(':');
-   Serial.print(date.minute(), DEC);
-   Serial.print(':');
-   Serial.print(date.second(), DEC);
-   Serial.println();
-}
-*/
+
 void nortsurHpico(){
   
   //VERDE NORTE SUR
@@ -163,34 +145,10 @@ digitalWrite(9,HIGH);
   }
 
     }
-    /*PARRAFO DE LECTURA. OMITIR 
-  void leer(){
-    myFile = SD.open("test.txt");
-  if (myFile) {
-    Serial.println("test.txt:");
 
-    // read from the file until there's nothing else in it:
-    while (myFile.available()) {
-      Serial.write(myFile.read());
-      tiempos[count]=myFile.read();
-    }
-    // close the file:
-    myFile.close();
-  } else {
-    // if the file didn't open, print an error:
-    Serial.println("error opening test.txt");
-  }
-}
-*/
-    
 
 void loop() {
-   // Obtener fecha actual y mostrar por Serial
-   //DateTime now = rtc.now();
-  // printDate(now);
-   //delay(3000);
-   nortsurHpico();
-   //sd();
 
-   //leer();
+   nortsurHpico();
+ 
 }
